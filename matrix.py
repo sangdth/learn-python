@@ -3,13 +3,18 @@ def main():
     | Draw squares with number inside. Sum of each row and column's items |
     | must be equal. For example if given 3, the square should look like: |
     | Size 3                                                              |
-    | 8   1   6 – 15                                                      |
-    | 3   5   7 – 15                                                      |
-    | 4   9   2 – 15                                                      |
-    | |   |   |                                                           |
-    | 15  15 15                                                           |
+    | +---+---+---+                                                       |
+    | │ 8 │ 1 │ 6 │ – 15                                                  |
+    | +---+---+---+                                                       |
+    | │ 3 │ 5 │ 7 │ – 15                                                  |
+    | +---+---+---+                                                       |
+    | │ 4 │ 9 │ 2 │ – 15                                                  |
+    | +---+---+---+                                                       |
+    |   |   |   |                                                         |
+    |  15  15  15                                                         |
     +---------------------------------------------------------------------+
     """
+
     print('Enter size of matrix: ')
     size = input()
     generate_table(int(size))
